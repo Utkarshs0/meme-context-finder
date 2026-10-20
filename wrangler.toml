@@ -1,0 +1,18 @@
+name = "meme-context-finder"
+compatibility_date = "2026-10-01"
+pages_build_output_dir = "dist"
+
+# Cloudflare Workers KV for <5ms on-demand lookup caching & IP rate-limiting
+[[kv_namespaces]]
+binding = "MEME_CACHE"
+id = "REPLACE_WITH_YOUR_CLOUDFLARE_KV_NAMESPACE_ID"
+
+# Cloudflare D1 Serverless SQLite + FTS5 Database for Millions of Slang Entries
+[[d1_databases]]
+binding = "DB"
+database_name = "meme-dictionary"
+database_id = "REPLACE_WITH_YOUR_CLOUDFLARE_D1_DATABASE_ID"
+
+[vars]
+SITE_URL = "https://meme-context-finder.pages.dev"
+GITHUB_REPO = "your-username/meme-context-finder"

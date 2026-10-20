@@ -1,0 +1,3 @@
+# Zero mandatory third-party packages required!
+# Both pipeline/discover_and_verify.py and pipeline/build_site.py use 100% Python 3.11+ Standard Library
+# (urllib.request, xml.etree.ElementTree, difflib, json, html, pathlib) for zero-dependency reliability and <2s CI startup.
